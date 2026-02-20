@@ -1,0 +1,10 @@
+# Makefile for the Image processing and creation project
+
+all:
+	gcc -Wall -Wextra -std=c99 main.c ppm_image.c lsystem.c turtle.c font.c undo_redo.c \
+	-o main -lm
+
+clean:
+	rm -f main
+
+.PHONY: clean
